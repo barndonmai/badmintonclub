@@ -61,8 +61,7 @@ img {
     height: 500px;
     background-color: rgba(166, 167, 163, 0.2); 
     border-radius: 50%;
-    z-index: -1; 
-    border: 0.2px solid black;  
+    z-index: -1;  
 }
 
 .container {
