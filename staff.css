@@ -24,9 +24,9 @@
 
 .background {
     background-image: url("staffHP.gif"); /* Set the background image URL */
-    background-size: 38%; /* Scale the background image to cover the entire container */
-    background-position: center; /* Position the background image in the center */
-    height: 100vh; /* Set the height of the container */
+    background-size: 100%; /* Scale the background image to cover the entire container */
+    background-position: bottom; /* Position the background image in the center */
+    height: 70vh; /* Set the height of the container */
 }
 
 body {
