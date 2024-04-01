@@ -1,0 +1,36 @@
+.nav-bar a {
+    color: #0b4469; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    font-size: large;
+    font-family: helvetica, sans-serif;
+    padding-left: 1%; padding-right: 1%;
+}
+
+.nav-bar {
+    padding: 3%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+.image {
+    height: 400px;
+    position: absolute;
+    right: 0;
+}
+
+.background {
+    background-image: url("https://www.animatedimages.org/data/media/417/animated-badminton-image-0041.gif"); /* Set the background image URL */
+    background-size: 30%; /* Scale the background image to cover the entire container */
+    background-position: center; /* Position the background image in the center */
+    height: 100vh; /* Set the height of the container */
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
