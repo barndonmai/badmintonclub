@@ -2,13 +2,56 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/registration.css">
+  <title>Registration</title>
 </head>
 
 <body>
-  <h1>REGISTER</h1>
+  <form action="" method="POST" enctype="multipart/form-data">
+
+    <div class="name">
+      <div>Name</div>
+      <input type="text" name="name" placeholder="john">
+    </div>
+    <div class="username">
+      <div>Username</div>
+      <input type="text" name="username" placeholder="username">
+    </div>
+
+    <div class="email">
+      <div>Email</div>
+      <input type="text" name="email" placeholder="johndoe@gmail.com">
+    </div>
+
+    <div class="password">
+      <div>Password</div>
+      <input type="password" name="password" placeholder="hunter12">
+    </div>
+
+
+    <!-- <div>
+      <div>Member Type</div>
+      <br>
+      <select name="province">
+        <option value="Alberta">Alberta</option>
+        <option value="British Columbia">British Columbia</option>
+        <option value="Manitoba">Manitoba</option>
+
+
+      </select>
+
+    </div> -->
+
+    <br>
+    <input type="submit" name="submit" value="Submit">
+
+
+
+
+
+  </form>
 </body>
 
 </html>
