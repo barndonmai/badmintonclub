@@ -1,0 +1,43 @@
+h1 {
+    font-family: Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    color: #263b53;
+    font-size: 40px;
+    margin-bottom: 600px;
+}
+
+a {
+    text-decoration: none; 
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+.background-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%; 
+    height: 500px; 
+    background-color: rgba(166, 167, 163, 0.2); 
+    z-index: -1;
+    border-radius: 20px;
+    margin-top:  40px;
+}
+
+img {
+    position: absolute;
+    top: 15px; 
+    left: 20px; 
+    width: 80px; 
+    height: auto; 
+}
