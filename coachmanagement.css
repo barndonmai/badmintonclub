@@ -6,7 +6,6 @@ h1 {
     color: #263b53;
     font-size: 40px;
     margin-bottom: 550px;
-    
 }
 
 h2 {
@@ -16,8 +15,6 @@ h2 {
     text-align: center; 
     color: #263b53;
     font-size: 20px;
-    /* margin-bottom: 550px; */
-    
 }
 
 * {
@@ -48,7 +45,6 @@ a {
     background-color: rgba(166, 167, 163, 0.2); 
     z-index: -1;
     border-radius: 20px;
-   
 }
 
 .buttons {
@@ -101,27 +97,25 @@ img {
 }
 
 form {
-    border-radius: 1px; /* Adjust the value as needed */
-    padding: 1px; /* Add padding for spacing */
+    border-radius: 1px;
+    padding: 1px;
 }
 
 input[type="text"], select {
-    border-radius: 5px; /* Adjust the value as needed */
-    padding: 5px; /* Add padding for spacing */
-    margin-bottom: 1px; /* Add margin for spacing between elements */
-    border: 1px solid #ccc; /* Add border for better visibility */
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 1px;
+    border: 1px solid #ccc;
 }
 
-/* CSS for centering the unordered list */
 ul {
-    list-style-type: none; /* Use disc bullets */
-    margin: 0 auto; /* Auto margin to center the list horizontally */
-    padding: 0; /* Remove default padding */
-    text-align: left; /* Align text to the left */
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
 }
 
-/* Style for list items */
 ul li {
-    margin-bottom: 10px; /* Add margin between list items */
-    text-align: center; /* Center the list item text */
+    margin-bottom: 10px;
+    text-align: center;
 }
