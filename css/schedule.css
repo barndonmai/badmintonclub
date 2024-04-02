@@ -1,0 +1,24 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: helvetica, sans-serif;
+  background-color: #f4f5f4;
+}
+
+body {
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 0;
+}
+
+.container {
+  height: 100vh;
+  margin-top: 80px;
+}
