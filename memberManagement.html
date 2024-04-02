@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Management</title>
+    <link rel="stylesheet" href="memManage.css">
+    <script>
+        function loadInput() {
+            var data = JSON.parse(localStorage.getItem("inputData"));
+            if (data) {
+                for (var i = 0; i < data.length; i++) {
+                    var row = document.getElementById("nameTable").insertRow(-1);
+                    var cell1 = row.insertCell(0);
+                    var cell2 = row.insertCell(1);
+                    cell1.innerHTML = '<input type="text" class="firstName" value="' + data[i].firstName + '">';
+                    cell2.innerHTML = '<input type="text" class="lastName" value="' + data[i].lastName + '">';
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <br><br>
+    <div class="nav-bar">
+        <a href="coach.html">Coach Home</a>
+        <a href="">Member Information</a>
+        <a href="memberManagement.html">Manage Members</a>
+    </div>
+    <br><br><br><br><br>
+    <div class="table">
+        <table border="1" id="nameTable">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            <tr>
+                <td>Eric</td>
+                <td>Yuen</td>
+            </tr>
+            <tr>
+                <td>Brandon</td>
+                <td>Mai</td>
+            </tr>
+            <tr>
+                <td>Kevin</td>
+                <td>Kim</td>
+            </tr>
+            <tr>
+                <td>Jana</td>
+                <td>Habibi</td>
+            </tr>
+            <tr>
+                <td>Kristina</td>
+                <td>Truong</td>
+            </tr>
+        </table>
+        <br><br>
+        <button onclick="addRow()">Add Row</button>
+        <button onclick="saveInput()">Save</button>
+        <button onclick="deleteRow()">Delete Last Row</button>
+    </div>
+    <script>
+        function addRow() {
+            var table = document.getElementById("nameTable");
+            var row = table.insertRow(-1); 
+            var cell1 = row.insertCell(0); 
+            var cell2 = row.insertCell(1); 
+            cell1.innerHTML = '<input type="text" class="firstName">'; 
+            cell2.innerHTML = '<input type="text" class="lastName">';
+        }
+
+        function saveInput() {
+            var firstNameInputs = document.querySelectorAll('.firstName');
+            var lastNameInputs = document.querySelectorAll('.lastName');
+            var data = [];
+
+            for (var i = 0; i < firstNameInputs.length; i++) {
+                var firstName = firstNameInputs[i].value;
+                var lastName = lastNameInputs[i].value;
+                data.push({ firstName: firstName, lastName: lastName });
+            }
+
+            localStorage.setItem("inputData", JSON.stringify(data));
+        }
+
+        function deleteRow() {
+            var table = document.getElementById("nameTable");
+            var rowCount = table.rows.length;
+
+            if (rowCount > 1) { 
+                table.deleteRow(rowCount - 1); 
+            } else {
+                alert("Cannot delete further. Minimum rows reached.");
+            }
+        }
+
+        loadInput();
+    </script>
+</body>
+</html>
