@@ -1,52 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/rak.png" alt="" style="height: 300px" />
+      <br />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/registration.css">
-  <title>Registration</title>
-</head>
+      <form id="userForm" onsubmit="return userType(event)">
+        <div class="container2">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder=" Username"
+            required
+          />
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder=" Password"
+            required
+          />
+        </div>
 
-<body>
-  <img src="images/racoon.png" alt="" width="15%" />
-  <form action="" method=" POST" enctype="multipart/form-data">
-
-    <div class="username">
-      <div>Username</div>
-      <input type="text" name="username" placeholder="username">
+        <input type="submit" value="Go" style="width: 60px" />
+      </form>
     </div>
 
-
-    <div class="password">
-      <div>Password</div>
-      <input type="password" name="password" placeholder="hunter12">
-    </div>
-
-
-
-
-    <!-- <div>
-      <div>Member Type</div>
-      <br>
-      <select name="province">
-        <option value="Alberta">Alberta</option>
-        <option value="British Columbia">British Columbia</option>
-        <option value="Manitoba">Manitoba</option>
-
-
-      </select>
-
-    </div> -->
-
-    <br>
-    <input type="submit" name="submit" value="Submit">
-
-
-
-
-
-  </form>
-</body>
-
+    <script src="login.js"></script>
+  </body>
 </html>
