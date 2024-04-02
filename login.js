@@ -22,7 +22,7 @@ function userType(event) {
       ([user, pass]) => user === username.value && pass === password.value
     )
   ) {
-    window.location.href = 'coach.html';
+    window.location.href = 'coachhomepage.html';
   } else if (
     treasurerArr.some(
       ([user, pass]) => user === username.value && pass === password.value
@@ -34,7 +34,7 @@ function userType(event) {
       ([user, pass]) => user === username.value && pass === password.value
     )
   ) {
-    window.location.href = 'staff.html';
+    window.location.href = 'staffhomepage.html';
   } else {
     alert('Invalid username or password!');
   }
