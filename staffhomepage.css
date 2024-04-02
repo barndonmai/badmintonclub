@@ -1,6 +1,6 @@
 .nav-bar a {
-    color: #0b4469; /* Set link color */
-    text-decoration: none; /* Remove underline */
+    color: #0b4469;
+    text-decoration: none;
     font-size: large;
     font-family: helvetica, sans-serif;
     padding-left: 1%; padding-right: 1%;
@@ -23,11 +23,14 @@
 }
 
 .background {
-    background-image: url("staffHP.gif"); /* Set the background image URL */
-    background-size: 100%; /* Scale the background image to cover the entire container */
-    background-position: bottom; /* Position the background image in the center */
-    height: 70vh; /* Set the height of the container */
+    background-image: url("staffhp.gif"); 
+    background-size: 50%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    background-color: #f4f5f4;
 }
+
 
 body {
     overflow-x: hidden;
