@@ -1,0 +1,42 @@
+.nav-bar a {
+        color: #0b4469;
+        text-decoration: none;
+        font-size: large;
+        font-family: helvetica, sans-serif;
+        padding-left: 1%; padding-right: 1%;
+}
+    
+.nav-bar {
+        padding: 3%;
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+}
+    
+.image {
+        height: 400px;
+        position: absolute;
+        right: 0;
+}
+    
+    
+body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+}
+    
+.container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+}
+    
+.container img {
+        max-height: 100%;
+        max-width: 100%;
+        vertical-align: middle;
+}
