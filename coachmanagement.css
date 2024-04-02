@@ -1,0 +1,127 @@
+h1 {
+    font-family: Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    color: #263b53;
+    font-size: 40px;
+    margin-bottom: 550px;
+    
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    color: #263b53;
+    font-size: 20px;
+    /* margin-bottom: 550px; */
+    
+}
+
+* {
+    font-family: Helvetica, sans-serif;
+    color: #263b53;
+}
+
+a {
+    text-decoration: none; 
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+.background-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; 
+    height: 500px; 
+    background-color: rgba(166, 167, 163, 0.2); 
+    z-index: -1;
+    border-radius: 20px;
+   
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; 
+}
+
+button {
+    font-family: Helvetica, sans-serif;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 20px; 
+    background-color: #38587a; 
+    color: white; 
+    cursor: pointer;
+    margin: 10px; 
+    font-weight: bold;
+}
+
+.buttons button {
+    margin: 0 10px; 
+}
+
+button:hover {
+    background-color: #d4e5bd; 
+}
+
+input[type="submit"] {
+    font-family: Helvetica, sans-serif;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 20px; 
+    background-color: #38587a; 
+    color: white; 
+    cursor: pointer;
+    margin: 10px; 
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #d4e5bd; 
+}
+
+img {
+    position: absolute;
+    top: 15px; 
+    left: 20px; 
+    width: 80px; 
+    height: auto; 
+}
+
+form {
+    border-radius: 1px; /* Adjust the value as needed */
+    padding: 1px; /* Add padding for spacing */
+}
+
+input[type="text"], select {
+    border-radius: 5px; /* Adjust the value as needed */
+    padding: 5px; /* Add padding for spacing */
+    margin-bottom: 1px; /* Add margin for spacing between elements */
+    border: 1px solid #ccc; /* Add border for better visibility */
+}
+
+/* CSS for centering the unordered list */
+ul {
+    list-style-type: none; /* Use disc bullets */
+    margin: 0 auto; /* Auto margin to center the list horizontally */
+    padding: 0; /* Remove default padding */
+    text-align: left; /* Align text to the left */
+}
+
+/* Style for list items */
+ul li {
+    margin-bottom: 10px; /* Add margin between list items */
+    text-align: center; /* Center the list item text */
+}
