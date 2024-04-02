@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: helvetica, sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+input {
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: 40px;
+  height: 40px;
+}
