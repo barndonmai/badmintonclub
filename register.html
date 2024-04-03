@@ -4,51 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/registration.css">
+  <link rel="stylesheet" href="css/register.css">
   <title>Registration</title>
 </head>
 
 <body>
   <img src="images/racoon.png" alt="" width="15%" />
-  <form action="" method=" POST" enctype="multipart/form-data">
+  <form id="userForm" onsubmit="return userType(event)">
 
-    <div class="name">
-      <div>Name</div>
-      <input type="text" name="name" placeholder="john">
-    </div>
-    <div class="username">
-      <div>Username</div>
-      <input type="text" name="username" placeholder="username">
-    </div>
 
-    <div class="email">
-      <div>Email</div>
-      <input type="text" name="email" placeholder="johndoe@gmail.com">
-    </div>
+    <form id="userForm" onsubmit="return userType(event)">
+      <div class="container2">
+        <input type="text" name="username" id="username" placeholder=" Username" class="input" required />
+        <input type="password" name="password" id="password" placeholder=" Password" class="input" required />
+        <input type="name" name="name" id="name" placeholder=" Name" class="input" required />
+        <input type="email" name="email" id="email" placeholder=" Email" class="input" required />
 
-    <div class="password">
-      <div>Password</div>
-      <input type="password" name="password" placeholder="hunter12">
+      </div>
+
+      <input type="submit" value="Register" class="submit" />
+    </form>
     </div>
 
 
-
-
-    <!-- <div>
-      <div>Member Type</div>
-      <br>
-      <select name="province">
-        <option value="Alberta">Alberta</option>
-        <option value="British Columbia">British Columbia</option>
-        <option value="Manitoba">Manitoba</option>
-
-
-      </select>
-
-    </div> -->
 
     <br>
-    <input type="submit" name="submit" value="Submit">
+
 
 
 
