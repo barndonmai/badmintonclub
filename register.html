@@ -5,37 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/register.css">
+  <script src="./register.js"></script>
   <title>Registration</title>
 </head>
 
 <body>
   <img src="images/racoon.png" alt="" width="15%" />
   <form id="userForm" onsubmit="return userType(event)">
+    <div class="container2">
 
-
-    <form id="userForm" onsubmit="return userType(event)">
-      <div class="container2">
-        <input type="text" name="username" id="username" placeholder=" Username" class="input" required />
-        <input type="password" name="password" id="password" placeholder=" Password" class="input" required />
-        <input type="name" name="name" id="name" placeholder=" Name" class="input" required />
-        <input type="email" name="email" id="email" placeholder=" Email" class="input" required />
-
-      </div>
-
-      <input onclick="window.location.href = 'member.html';" type="submit" value="Register" class="submit" />
-    </form>
+      <input type="text" name="username" id="username" placeholder=" Username" class="input" required />
+      <input type="password" name="password" id="password" placeholder=" Password" class="input" required />
+      <input type="name" name="name" id="name" placeholder=" Name" class="input" required />
+      <input type="email" name="email" id="email" placeholder=" Email" class="input" required />
+      <select name="userType" id="userType" class="input" required>
+        <option value="" disabled selected>Select User Type</option>
+        <option value="coach">Coach</option>
+        <option value="member">Member</option>
+        <option value="admin">Admin</option>
+        <option value="treasurer">Treasurer</option>
+      </select>
+      <input type="submit" value="register" class="submit" />
     </div>
 
-
-
-    <br>
-
-
-
-
-
-
   </form>
+
 </body>
 
 </html>
