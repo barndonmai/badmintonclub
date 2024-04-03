@@ -27,7 +27,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%; 
-    height: 340px; 
+    height: 360px; 
     background-color: rgba(166, 167, 163, 0.2); 
     z-index: -1;
     border-radius: 20px;
@@ -60,10 +60,16 @@ img {
 .table-header {
     font-family: Helvetica, sans-serif;
     font-weight: bold; 
-    color: 263b53; 
+    color: #263b53; 
 
 }
 
+.table-cell {
+    padding: 10px;
+    border: 1px solid black; 
+    font-family: Helvetica, sans-serif;
+
+}
 .table-cell {
     padding: 10px;
     border: 1px solid black; 
