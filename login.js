@@ -3,13 +3,21 @@ function userType(event) {
 
   const username = document.getElementById('username');
   const password = document.getElementById('password');
-  const memberArr = [['kevinkim', 'aslakdj']];
+  const memberArr = [
+    ['kevinkim', 'aslakdj'],
+    ['sarahhoneydew', 'tmakdlf'],
+    ['elliemango', 'dhktlqkf']
+  ];
   const coachArr = [
     ['janepear', 'wpoeri'],
-    ['jerrylee', 'zxmbak'],
+    ['jerrylee', 'zxmbak']
   ];
-  const treasurerArr = [['john', 'bgebui']];
-  const staffArr = [['michaelorange', 'xrdvgbh']];
+  const treasurerArr = [
+    ['john', 'bgebui']
+  ];
+  const staffArr = [
+    ['michaelorange', 'xrdvgbh']
+  ];
 
   if (
     memberArr.some(
