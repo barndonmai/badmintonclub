@@ -1,3 +1,7 @@
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById("userForm").addEventListener("submit", userType);
+});
+
 function userType(event) {
     event.preventDefault(); // Prevent form submission
 
@@ -7,7 +11,7 @@ function userType(event) {
     // Redirect based on the selected value
     switch (userType) {
         case "coach":
-            window.location.href = "coaches.html";
+            window.location.href = "coachhomepage.html";
             break;
         case "member":
             window.location.href = "member.html";
