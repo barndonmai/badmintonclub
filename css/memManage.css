@@ -1,0 +1,80 @@
+.nav-bar a {
+    color: #0b4469; 
+    text-decoration: none;
+    font-size: large;
+    font-family: helvetica, sans-serif;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.nav-bar {
+    padding: 3%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f4f5f4;
+    left: 0;
+}
+
+.image {
+    height: 400px;
+    position: absolute;
+    right: 0;
+}
+
+.background {
+    background-image: url(""); 
+    background-size: 38%; 
+    background-position: center; 
+    height: 100vh; 
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto; 
+}
+
+table {
+    border: 1px solid #0b4469; 
+    width: 100%;
+    font-size: large;
+    font-family: helvetica, sans-serif;
+    color: #0b4469; 
+}
+th, td {
+    border: 1px solid  #0b4469; 
+    padding: 8px; 
+    text-align: left; 
+    font-size: large;
+    font-family: helvetica, sans-serif;
+    color: #0b4469; 
+}
+
+.table {
+    padding: 3%;
+}
+
+input[type="text"] {
+    border: 1px solid  #0b4469; 
+    border: none;
+    text-align: left; 
+    font-size: large;
+    font-family: helvetica, sans-serif;
+    color: #0b4469; 
+}
+
+button {
+    font-family: helvetica, sans-serif;
+    color: #0b4469; 
+    padding: 1%;
+    border-radius: 10px;
+    border: #0b4469;
+    font-size: medium;
+}
+
+button:hover {
+    background-color: #0b4469;
+    color: white;
+}
