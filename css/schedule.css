@@ -13,6 +13,7 @@ header {
   position: fixed;
   overflow: hidden;
   top: 0;
+  left: 0;
   width: 100%;
   background-color: white;
   z-index: 0;
@@ -21,4 +22,8 @@ header {
 .container {
   height: 100vh;
   margin-top: 80px;
+}
+
+a {
+  color: black;
 }
